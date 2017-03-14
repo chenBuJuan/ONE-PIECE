@@ -1,0 +1,326 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: "Microsoft YaHei";
+    background-color: #ccc;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+p{
+    text-indent: 2em;
+}
+
+#leftContainer{
+    background-color: #33246e;
+    position: fixed;
+    padding: 10px;
+    box-sizing: border-box;
+
+    animation: leftContainerIn 0.3s ease-in-out 0s;
+    animation-fill-mode: both;
+}
+
+#logoContainer{
+    width: 100%;
+    height: 100px;
+
+    animation: iconIn 0.6s ease-in-out 0s;
+    animation-fill-mode: both;
+}
+#logoContainer img{
+    height: 100%;
+}
+
+#lineContainer{
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+#lineContainer .line{
+    display: inline-block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    position: absolute;
+}
+#line_1{
+    width: 150px;
+    top: 0px;
+    right: 100px;
+    border-color: #fff;
+
+    animation: line_1In 0.9s ease-in-out 0s;
+    animation-fill-mode: both;
+}
+#line_2{
+    width: 300px;
+    top: 50px;
+    right: 0px;
+    border-color: #28dde0;
+
+    animation: line_2In 0.9s ease-in-out 0s;
+    animation-fill-mode: both;
+}
+
+#mesContainer{
+    width: 60%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    left: 28%;
+    top: 40%;
+    position: absolute;
+    background-color: #33246e;
+}
+#controlContainer{
+    width: 100%;
+}
+#controlContainer .button{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #28dde0;
+    font-size: 18px;
+    color: #28dde0;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 17px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#controlContainer .button:hover{
+    background-color: #28dde0;
+    color: #fff;
+}
+#mesContainer .mes{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#mesContainer .mes .title{
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+#mesContainer .mes .info{
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FEE6BA;
+}
+
+#contentContainer{
+    width: 55%;
+    position: absolute;
+    right: 5%;
+    top: 80px;
+}
+#contentContainer .roleContainer{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#contentContainer .roleContainer .img{
+    width: 30%;
+    float: right;
+}
+#contentContainer .roleContainer .img img{
+    width: 100%;
+}
+#contentContainer .roleContainer .roleMes{
+    width: 65%;
+}
+#contentContainer .roleContainer .roleMes p{
+    font-size: 14px;
+}
+#contentContainer .roleContainer .roleMes p span{
+    font-weight: bold;
+}
+#hzt_0 img{
+    display: block;
+    margin: 0 auto;
+}
+#hzt_2{
+    font-size: 14px;
+}
+#hzt_5{
+    font-size: 14px;
+}
+#hzt_5 table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#hzt_5 table caption{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#hzt_5 table tr{
+    min-height: 30px;
+    line-height: 30px;
+}
+#hzt_5 table th{
+    text-align: left;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+}
+#hzt_5 table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+#hzt_5 table tr td:nth-of-type(1){
+    width: 35%;
+}
+#hzt_2 .roleContainer .img{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    float: none;
+}
+
+#menuButton{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 85%;
+    background-color: #33246e;
+    color: #28dde0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+
+    transition: all 0.25s ease-in-out 0s;
+}
+#menuButton:hover{
+    background-color: #28dde0;
+    color: #33246e;
+}
+
+#mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    display: none;
+}
+
+#menuContainer{
+    width: 460px;
+    height: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -265px;
+    background-color: #33246e;
+    display: none;
+}
+
+#menuWrapper{
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+#menuWrapper .menuCell{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+#menuWrapper .menuCell a{
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    font-size: 16px;
+    color: #28dde0;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+#menuWrapper .menuCell a:hover{
+    font-size: 24px;
+}
+#menuWrapper #block{
+    position: absolute;
+    left: 80px;
+    top: 255px;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #28dde0;
+
+    transition: top 0.5s ease-in-out 0s;
+}
+#menuWrapper .menuCell:nth-of-type(1):hover ~ #block{
+    top: 45px;
+}
+#menuWrapper .menuCell:nth-of-type(2):hover ~ #block{
+    top: 115px;
+}
+#menuWrapper .menuCell:nth-of-type(3):hover ~ #block{
+    top: 185px;
+}
+#menuWrapper .menuCell:nth-of-type(4):hover ~ #block{
+    top: 255px;
+}
+
+#closeBtn{
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-top: -17.5px;
+    margin-left: -17.5px;
+    border: 1px solid #fff;
+    border-radius: 17.5px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+#closeBtn:hover{
+    transform: rotate(180deg);
+}
+
+#backTop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    background-color: #33246e;
+    color: #28dde0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+#backTop:hover{
+    font-size: 24px;
+}

@@ -1,0 +1,80 @@
+
+@-webkit-keyframes leftContainerIn{
+
+    0%{
+        width: 25%;
+    }
+    100%{
+        width: 35%;
+    }
+
+}
+
+@-webkit-keyframes line_1In{
+    0%{
+        width: 0;
+    }
+    75%{
+        width: 0;
+    }
+    100%{
+        width: 150px;
+    }
+}
+
+@-webkit-keyframes line_2In{
+    0%{
+        width: 0;
+    }
+    75%{
+        width: 0;
+    }
+    100%{
+        width: 300px;
+    }
+}
+
+@-webkit-keyframes iconIn{
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@-webkit-keyframes mesIn{
+    0%{
+        transform: translate(-10px,0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hztIn{
+    0%{
+        transform: translate(250px,0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes menuIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

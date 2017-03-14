@@ -1,0 +1,474 @@
+body{
+    min-width: 1024px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: "Microsoft YaHei";
+    background-color: #ccc;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    position: relative;
+}
+
+#imagesContainer{
+    width: 100%;
+    height: 100%;
+}
+#imagesContainer img{
+    position: absolute;
+}
+#image01{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    
+    animation: img01In 1.2s ease-in-out 0s;
+    animation-fill-mode: both;
+}
+#image02{
+    width: 50%;
+    height: 430px;
+    bottom: 0;
+    right: 0;
+
+    animation: img02In 1.2s ease-in-out 0s;
+}
+#image03{
+    width: 25%;
+    height: 270px;
+    top: 10%;
+    right: 10%;
+
+    animation: img03In 1.2s ease-in-out 0s;
+}
+
+#opContainer{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 5%;
+    right: 85%;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    overflow: hidden;
+
+    animation: opIn 1.2s ease-in-out 0s;
+}
+
+#h1Container{
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top: 30%;
+    z-index: 1001;
+}
+#h1Container h1{
+    width: 100%;
+    height: 160px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 160px;
+    text-align: center;
+    font-size: 120px;
+    color: #fff;
+    word-spacing: 15px;
+    text-indent: 30px;
+    letter-spacing: 30px;
+
+    animation: h1In 1.2s ease-in-out 0s;
+}
+
+#dateContainer{
+    height: 60px;
+    width: 10%;
+    font-size: 14px;
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    overflow: hidden;
+
+    animation: dateIn 1.2s ease-in-out 0s;
+}
+#dateContainer span{
+    width: 100%;
+    height: 20px;
+    display: inline-block;
+    text-align: right;
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+#mesContainer{
+    height: 80px;
+    width: 30%;
+    position: absolute;
+    top: 100%;
+    right: 57%;
+    margin-top: -80px;
+    overflow: hidden;
+
+    animation: mesIn 1.2s ease-in-out 0s;
+}
+#mesContainer span{
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    color: #fff;
+}
+#mesContainer span:nth-of-type(1){
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+#mesContainer span:nth-of-type(2){
+    height: 60px;
+    line-height: 60px;
+    font-size: 60px;
+    word-spacing: 60px;
+}
+
+#writerContainer{
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    overflow: hidden;
+
+    animation: writerIn 1.2s ease-in-out 0s;
+}
+#writerContainer span{
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+#borderContainer{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    overflow: hidden;
+
+    animation: borderIn 1.2s ease-in-out 0s;
+}
+#borderContainer span{
+    height: 30px;
+    display: block;
+    position: absolute;
+}
+#colorBlock01{
+    width: 17%;
+    left: 0;
+    background-color: #d49856;
+}
+#colorBlock02{
+    width: 3%;
+    left: 33%;
+    background-color: #41a2a1;
+}
+#colorBlock03{
+    width: 3%;
+    left: 75%;
+    background-color: #d49856;
+}
+#colorBlock04{
+    width: 15%;
+    left: 83%;
+    background-color: #df2d42;
+}
+#lineBlock{
+    position: absolute;
+    height: 30px;
+    width: 20%;
+    left: 45%;
+}
+#lineBlock div{
+    display: inline-block;
+    width: 10%;
+    height: 30px;
+    margin-right: 10%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+#btnContainer{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background-color: #181819;
+    color: #c58846;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+
+    animation: btnIn 1.2s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+#btnContainer:hover{
+    background-color: #c58846;
+    color: #181819;
+}
+
+section{
+    width: 100%;
+    height: 1000px;
+    margin-top: 100px;
+}
+
+#iconContainer{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+#iconContainer img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    opacity: 0;
+}
+#iconContainer img:nth-of-type(1){
+    top: 10%;
+    left: 10%;
+}
+#iconContainer img:nth-of-type(2){
+    top: 30%;
+    left: 30%;
+}
+#iconContainer img:nth-of-type(3){
+    top: 10%;
+    left: 50%;
+}
+#iconContainer img:nth-of-type(4){
+    top: 30%;
+    left: 70%;
+}
+#iconContainer img:nth-of-type(5){
+    top: 10%;
+    left: 90%;
+}
+#iconContainer img:nth-of-type(6){
+    top: 50%;
+    left: 20%;
+}
+#iconContainer img:nth-of-type(7){
+    top: 70%;
+    left: 40%;
+}
+#iconContainer img:nth-of-type(8){
+    top: 70%;
+    left: 60%;
+}
+#iconContainer img:nth-of-type(9){
+    top: 50%;
+    left: 80%;
+}
+#iconContainer img:nth-of-type(10){
+    top: 40%;
+    left: 50%;
+}
+
+#bgContainer{
+    height: 700px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#bgImgContainer{
+    width: 100%;
+    height: 100%;
+}
+#bgImgContainer img{
+    position: absolute;
+}
+#bgImgContainer img:nth-of-type(1){
+    width: 250px;
+    top: 20%;
+    left: 12%;
+}
+#bgImgContainer img:nth-of-type(2){
+    width: 350px;
+    top: 0;
+    left: 68%;
+}
+#bgImgContainer img:nth-of-type(3){
+    width: 400px;
+    top: 70%;
+    left: 3%;
+}
+
+#bgMesContainer{
+    width: 460px;
+    height: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -265px;
+    border: 15px solid #d49856;
+    box-sizing: border-box;
+
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+#bgMesContainer p{
+    width: 100%;
+    height: 460px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    color: #fff;
+    padding: 30px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+#bgMesContainer span{
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    background-color: #181819;
+    color: #c58846;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 3px;
+    text-indent: 3px;
+    cursor: pointer;
+}
+
+#menuContainer{
+    width: 460px;
+    height: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -265px;
+    background-color: #181819;
+
+    transform: rotateY(-90deg);
+    opacity: 0;
+}
+
+#menuWrapper{
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+#menuWrapper .menuCell{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+#menuWrapper .menuCell a{
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    font-size: 16px;
+    color: #c58846;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+#menuWrapper .menuCell a:hover{
+    font-size: 24px;
+}
+#menuWrapper #block{
+    position: absolute;
+    left: 80px;
+    top: 45px;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #c58846;
+
+    transition: top 0.5s ease-in-out 0s;
+}
+#menuWrapper .menuCell:nth-of-type(1):hover ~ #block{
+    top: 45px;
+}
+#menuWrapper .menuCell:nth-of-type(2):hover ~ #block{
+    top: 115px;
+}
+#menuWrapper .menuCell:nth-of-type(3):hover ~ #block{
+    top: 185px;
+}
+#menuWrapper .menuCell:nth-of-type(4):hover ~ #block{
+    top: 255px;
+}
+
+#closeBtn{
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-top: -17.5px;
+    margin-left: -17.5px;
+    border: 1px solid #fff;
+    border-radius: 17.5px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+#closeBtn:hover{
+    transform: rotate(180deg);
+}
+
+footer{
+    width: 100%;
+    position: relative;
+}
+footer span{
+    width: 20%;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+    right: 5%;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
